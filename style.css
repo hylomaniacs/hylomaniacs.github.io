@@ -48,11 +48,17 @@ hr {
 }
 #logo {
     width: 25%;
+    max-width: 10em;
     margin: 0 auto;
 }
 #title {
-  margin: 0.5em 0;
+  margin: 0.7em 0 0 0;
   font-size: 3em;
+}
+#tag {
+  font-size: 2em;
+  color: #bdc3c7;
+  margin: 0.125em 0 1em 0;
 }
 #down {
     box-sizing: border-box;
