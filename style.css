@@ -1,6 +1,8 @@
 /* generic tags */
 a {
-    color: #dddddd;
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
 }
 a, button {
   cursor: pointer;
@@ -10,8 +12,13 @@ body, html {
     margin: 0;
     color: #222222;
     font-family: verdana;
-    font-size: 16px;
+    font-size: 3vw;
     color: rgba(44, 62, 80, 1.0);
+}
+@media (min-width: 768px) {
+  body, html {
+    font-size: 23.04px;
+  }
 }
 hr {
     height: 1px;
@@ -20,7 +27,7 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
-    margin: 40px 0;
+    margin: 2.5em 0;
 }
 
 /* generic classes */
@@ -32,7 +39,6 @@ hr {
 #top {
     background-color: rgba(44, 62, 80, 0.8);
     color: rgba(236, 240, 241,1.0);
-    font-size: 50px;
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -45,17 +51,18 @@ hr {
     margin: 0 auto;
 }
 #title {
-  margin: 25px 0;
+  margin: 0.5em 0;
+  font-size: 3em;
 }
 #down {
     box-sizing: border-box;
-    padding: 20px;
-    font-size: 20px;
+    padding: 0.75em;
+    font-size: 1.25em;
     text-align: center;
     background-color: transparent;
     color: #dddddd;
-    border: 2px solid #dddddd;
-    border-radius: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 0.5em;
     display: block;
     margin: 0 auto;
 }
@@ -68,14 +75,14 @@ hr {
 
 /* main content */
 #main {
-	width: calc(100% - 80px);
-  min-height: 300px;
+	width: calc(100% - 2em);
+  min-height: 20em;
 	background-color: rgba(236, 240, 241, 0.8);
-  margin: 40px;
-  padding: 40px;
+  margin: 1em;
+  padding: 1.5em;
   box-sizing: border-box;
   border-radius: 0.25em;
-  box-shadow: 0 0 30px rgba(52, 73, 94, 0.5);
+  box-shadow: 0 0 2em rgba(52, 73, 94, 0.5);
 }
 #wrap {
     width: 100%;
@@ -87,23 +94,20 @@ hr {
 
 /* footer */
 #foot {
-    min-height: 200px;
+    min-height: 12.5em;
     width: 100%;
     background-color: rgba(44, 62, 80, 0.8);
     color: rgba(236, 240, 241,1.0);
-    position: absolute;
     margin: 0;
-    padding: 40px;
+    padding: 2.5em;
     text-align: right;
     box-sizing: border-box;
-    box-shadow: 0 0 30px rgba(52, 73, 94, 1.0);
+    box-shadow: 0 0 2em rgba(52, 73, 94, 1.0);
 }
 #up {
     background-color: transparent;
-    color: #dddddd;
     border: none;
     display: block;
     float: left;
-    font-size: 16px;
     text-decoration: underline;
 }
