@@ -1,0 +1,109 @@
+/* generic tags */
+a {
+    color: #dddddd;
+}
+a, button {
+  cursor: pointer;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    color: #222222;
+    font-family: verdana;
+    font-size: 16px;
+    color: rgba(44, 62, 80, 1.0);
+}
+hr {
+    height: 1px;
+    border: none;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    margin: 40px 0;
+}
+
+/* generic classes */
+.red {
+    color: rgba(231, 76, 60,1.0);
+}
+
+/* header */
+#top {
+    background-color: rgba(44, 62, 80, 0.8);
+    color: rgba(236, 240, 241,1.0);
+    font-size: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(52, 73, 94, 1.0);
+}
+#logo {
+    width: 25%;
+    margin: 0 auto;
+}
+#title {
+  margin: 25px 0;
+}
+#down {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+    color: #dddddd;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+#down:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#down:focus {
+    outline: none;
+}
+
+/* main content */
+#main {
+	width: calc(100% - 80px);
+  min-height: 300px;
+	background-color: rgba(236, 240, 241, 0.8);
+  margin: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  box-shadow: 0 0 30px rgba(52, 73, 94, 0.5);
+}
+#wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background: url(https://i.imgur.com/BgWhHqw.jpg) no-repeat center center fixed;
+}
+
+/* footer */
+#foot {
+    min-height: 200px;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: rgba(236, 240, 241,1.0);
+    position: absolute;
+    margin: 0;
+    padding: 40px;
+    text-align: right;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(52, 73, 94, 1.0);
+}
+#up {
+    background-color: transparent;
+    color: #dddddd;
+    border: none;
+    display: block;
+    float: left;
+    font-size: 16px;
+    text-decoration: underline;
+}
