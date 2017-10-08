@@ -19,6 +19,9 @@ body, html {
   body, html {
     font-size: 23.04px;
   }
+  #wrap {
+    background-attachment: fixed !important;
+  }
 }
 hr {
     height: 1px;
@@ -95,7 +98,7 @@ hr {
     padding: 0;
     margin: 0;
     overflow: auto;
-    background: url(https://i.imgur.com/BgWhHqw.jpg) no-repeat center center fixed;
+    background: url(https://i.imgur.com/BgWhHqw.jpg) no-repeat center center scroll;
 }
 
 /* footer */
